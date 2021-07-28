@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 241, 241);
+    text-align: center;
+    color: #042363;
+    font-size: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.navbar ul li {
+    margin: 5%;
+    background-color: #042363;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.respuesta {
+    margin: 10px;
+}
+
+.respuesta img {
+    margin: 10px;
+}

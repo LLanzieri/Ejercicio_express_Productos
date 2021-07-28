@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 241, 241);
+    text-align: center;
+    color: #042363;
+    font-size: 20px;
+}
+
+.logo {
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.container-nav {
+    margin: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 5%;
+    background-color: #042363;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .navbar ul li {
+        margin: 3% auto;
+    }
+}

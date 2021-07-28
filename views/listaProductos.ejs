@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosListaProductos.css">
+    <title>LISTA DE PRODUCTOS</title>
+</head>
+
+<body>
+    <h1>LISTADO DE PRODUCTOS</h1>
+    <%- include('partials/navbar') -%>
+        <hr>
+        <div class="error">
+            <% if (locals.error) { %>
+                <img src="/img/empty-box.png" alt="">
+                <p>
+
+                    <%= error %>
+                </p>
+        </div>
+
+        <% } else { %>
+
+            <div class="container-productos">
+                <% for( let index=0; index < listadoProductos.length; index++ ) { %>
+                    <div class="caja-producto">
+                        <p>Categoría: <%= listadoProductos[index].categoria %>
+                        </p>
+                        <p>Nombre: <%= listadoProductos[index].nombre %>
+                        </p>
+                        <p>Precio: <%= listadoProductos[index].precio %>
+                        </p>
+                        <p>Marca: <%= listadoProductos[index].marca %>
+                        </p>
+                        <div class="imagen">
+                            <img src=<%=listadoProductos[index].imagen %> alt="">
+                        </div>
+                        <div class="btn_vermas">
+                            <a href="/productos/detalle/<%=index%>">Ver producto</a>
+                        </div>
+                        <div class="btn_vermas">
+                            <a href="/productos/borrar/<%=index%>">Eliminar producto</a>
+                        </div>
+
+                    </div>
+                    <% } %>
+                        <% } %>
+            </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/respuestaCreacionProducto.css">
+    <title>RESPUESTA CREACION PRODUCTO</title>
+</head>
+
+<body>
+
+    <h1>CREAR PRODUCTO</h1>
+
+    <%- include('partials/navbar') -%>
+        <hr>
+
+
+        <div class="respuesta">
+            <% if (rta==0) { %>
+                <img src="/img/rojo.png" alt="">
+                <% } %>
+                    <% if (rta==1) { %>
+                        <img src="/img/verde.png" alt="">
+                        <% } %>
+                            <% if (rta==2) { %>
+                                <img src="/img/delete-file.png" alt="">
+                                <% } %>
+                                    <h2>
+                                        <%=msj %>
+                                    </h2>
+        </div>
+
+
+
+</body>
+
+</html>
