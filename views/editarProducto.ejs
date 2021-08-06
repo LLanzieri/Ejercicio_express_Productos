@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/crearProducto.css">
+    <title>CREAR PRODUCTO</title>
+</head>
+
+<body>
+    <h1>CREAR PRODUCTO</h1>
+    <%- include('partials/navbar') -%>
+        <hr>
+
+        <div class="caja-formulario">
+            <form method="post" action="/productos/editar/<%=objetoAeditar._id  %> " enctype="multipart/form-data">
+
+                <div class="container-campo">
+                    <label for="categoria">Seleccione una categoría: </label>
+                    <select name="categoria" id="categoria">
+                        <option value="electrodomestico">Electrodoméstico</option>
+                        <option value="smartphone">Celular</option>
+                        <option value="jardin">Jardín</option>
+                        <option value="dormitorio">Dormitorio</option>
+                    </select>
+                </div>
+                <% %>
+                    <br>
+                    <div class="container-campo">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" value=<%=objetoAeditar.nombre %> >
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label for="precio">Precio ($): </label>
+                        <input type="text" id="precio" name="precio" value=<%=objetoAeditar.precio %>>
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label for="marca">Marca: </label>
+                        <input type="text" id="marca" name="marca" value=<%=objetoAeditar.marca %>>
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label for="imagen">Selecciona una foto del producto:</label>
+                        <input type="file" id="imagen" name="imagen" style=margin:15px>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="btn_enviar">
+                        <input type="submit" value="Editar">
+                    </div>
+
+            </form>
+        </div>
+
+</body>
+
+</html>

@@ -34,15 +34,18 @@ body {
     background-color: #042363;
     padding: 10px;
     border-radius: 5%;
+    display: flex;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
+    margin: auto;
 }
 
 @media (min-width: 768px) {
     .navbar ul li {
         margin: 3% auto;
+        width: 20%;
     }
 }

@@ -17,7 +17,6 @@
             <% if (locals.error) { %>
                 <img src="/img/empty-box.png" alt="">
                 <p>
-
                     <%= error %>
                 </p>
         </div>
@@ -27,22 +26,25 @@
             <div class="container-productos">
                 <% for( let index=0; index < listadoProductos.length; index++ ) { %>
                     <div class="caja-producto">
-                        <p>Categoría: <%= listadoProductos[index].categoria %>
+                        <p><u>Categoría</u>: <%= listadoProductos[index].categoria %>
                         </p>
-                        <p>Nombre: <%= listadoProductos[index].nombre %>
+                        <p><u>Nombre</u>: <%= listadoProductos[index].nombre %>
                         </p>
-                        <p>Precio: <%= listadoProductos[index].precio %>
+                        <p><u>Precio</u>: <%= listadoProductos[index].precio %>
                         </p>
-                        <p>Marca: <%= listadoProductos[index].marca %>
+                        <p><u>Marca</u>: <%= listadoProductos[index].marca %>
                         </p>
                         <div class="imagen">
                             <img src=<%=listadoProductos[index].imagen %> alt="">
                         </div>
                         <div class="btn_vermas">
-                            <a href="/productos/detalle/<%=index%>">Ver producto</a>
+                            <a href="/productos/detalle/<%=listadoProductos[index]._id%>">Ver producto</a>
                         </div>
                         <div class="btn_vermas">
-                            <a href="/productos/borrar/<%=index%>">Eliminar producto</a>
+                            <a href="/productos/editar/<%=listadoProductos[index]._id%>">Editar producto</a>
+                        </div>
+                        <div class="btn_vermas">
+                            <a href="/productos/borrar/<%=listadoProductos[index]._id%>">Eliminar producto</a>
                         </div>
 
                     </div>

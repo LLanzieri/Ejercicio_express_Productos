@@ -1,8 +1,22 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
+
+let miBasedeDatos = 'mongodb://localhost/productos';
+mongoose.connect(miBasedeDatos,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true
+    }
+);
+
+//settings
+app.set('port', process.env.PORT || 5000)
 
 //inicio sv
-app.listen(5000, () =>
+app.listen(app.get('port'), () =>
     console.log("Servidor iniciado correctamente")
 );
 

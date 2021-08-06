@@ -29,6 +29,12 @@ router.get('/', controller_productos.nuestrosProductos);
 //localhost:5000/productos/detalle/:id
 router.get('/detalle/:id', controller_productos.detalleProducto);
 
+//localhost:5000/productos/editar/:id
+router.get('/editar/:id', controller_productos.editarProducto);
+
+//localhost:5000/productos/editar/:id   ---- CUANDO EDITO Y ENVIO LA FOTO
+router.post('/editar/:id', upload.single('imagen'), controller_productos.editarYguardarProducto);
+
 //localhost:5000/productos/borrar/:id
 router.get('/borrar/:id', controller_productos.borrarProducto)
 

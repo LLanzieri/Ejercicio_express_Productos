@@ -18,6 +18,7 @@
 
 
         <div class="respuesta">
+
             <% if (rta==0) { %>
                 <img src="/img/rojo.png" alt="">
                 <% } %>
@@ -27,9 +28,12 @@
                             <% if (rta==2) { %>
                                 <img src="/img/delete-file.png" alt="">
                                 <% } %>
-                                    <h2>
-                                        <%=msj %>
-                                    </h2>
+                                    <% if (rta==3) { %>
+                                        <img src="/img/editar.png" alt="">
+                                        <% } %>
+                                            <h2>
+                                                <%=msj %>
+                                            </h2>
         </div>
 
 

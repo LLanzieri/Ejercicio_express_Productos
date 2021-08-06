@@ -4,7 +4,7 @@ body {
     background-color: rgb(243, 241, 241);
     text-align: center;
     color: #042363;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 h1 {
@@ -24,11 +24,13 @@ h1 {
     background-color: #042363;
     padding: 10px;
     border-radius: 5%;
+    display: flex;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
+    margin: auto;
 }
 
 .caja-formulario {
@@ -37,6 +39,10 @@ h1 {
 
 .container-campo {
     margin: 10px;
+}
+
+.container-campo select {
+    margin: 5%;
 }
 
 .btn_enviar input {
@@ -48,9 +54,13 @@ h1 {
 @media (min-width: 768px) {
     .navbar ul li {
         margin: 3% auto;
+        width: 20%;
     }
     .caja-formulario {
         margin: 5%;
         font-size: 20px;
+    }
+    .container-campo select {
+        margin: 1%;
     }
 }

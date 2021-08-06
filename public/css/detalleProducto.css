@@ -25,11 +25,13 @@ h1 {
     background-color: #042363;
     padding: 10px;
     border-radius: 5%;
+    display: flex;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
+    margin: auto;
 }
 
 .producto {
@@ -60,9 +62,10 @@ p {
 @media (min-width: 768px) {
     .navbar ul li {
         margin: 3% auto;
+        width: 20%;
     }
     .imagen {
-        width: 50%;
+        width: 40%;
     }
     .producto {
         margin: 5% 0px;
@@ -71,9 +74,6 @@ p {
         justify-content: space-evenly;
     }
     .contenido-detalle {
-        margin: auto
-    }
-    p {
-        font-size: 20px;
+        margin: 5% auto;
     }
 }
