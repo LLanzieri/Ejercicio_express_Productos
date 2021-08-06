@@ -27,9 +27,9 @@ Se permite ABM de productos especificando "categoría", "nombre", "precio", "mar
 3) Ejecutar por consola el comando: `$ node ./app.js` o también `$ nodemon ./app.js`
 4) Establecer conexión con el servidor a través de cualquier navegador ingresando a la dirección: `http://localhost:5000`
 
-###### ALGUNAS IMÁGENES :tw-1f4f7:
+###### ALGUNAS IMÁGENES
 
-![imágen formulario de creación de producto.](https://raw.githubusercontent.com/LLanzieri/ejercicio_express_Productos/master/assets/crearProducto.png)
-![imágen listado de productos guardados en la base de datos](https://raw.githubusercontent.com/LLanzieri/ejercicio_express_Productos/master/assets/listado.png)
-![imágen de como se ve un producto en el listado](https://raw.githubusercontent.com/LLanzieri/ejercicio_express_Productos/master/assets/producto1.png)
-![imágen de como se ve el detalle de un producto seleccionado](https://raw.githubusercontent.com/LLanzieri/ejercicio_express_Productos/master/assets/detalle.png)
+![crearProducto](https://user-images.githubusercontent.com/21178992/128574534-9662559c-b796-4773-8975-7ee322ca1584.PNG)
+![listado](https://user-images.githubusercontent.com/21178992/128574749-d9139c5c-f2fb-4dfb-b543-30f260749e88.PNG)
+![producto1](https://user-images.githubusercontent.com/21178992/128574790-c4799ee0-51ec-4149-8641-0eaccd0fe13e.PNG)
+![detalle](https://user-images.githubusercontent.com/21178992/128574808-212457e5-cf31-4041-b3a5-76e10407b853.PNG)
